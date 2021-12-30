@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HackerRank {
 
 //    Given an integer, perform the following conditional actions:
@@ -19,13 +21,20 @@ public class HackerRank {
         }
     }
 
+    public static void stdinOut() {
+        Scanner scanner = new Scanner(System.in);
+        int num1 = scanner.nextInt();
+        double num2 = scanner.nextDouble();
+        scanner.nextLine();
+        String text = scanner.nextLine();
+
+        System.out.println("String: " + text);
+        System.out.println("Double: " + num2);
+        System.out.println("Int: " + num1);
+    }
+
     public static void main(String[] args) {
-        weirdCheck(2);
-        weirdCheck(4);
-        weirdCheck(6);
-        weirdCheck(8);
-        weirdCheck(24);
-        weirdCheck(1);
-        weirdCheck(3);
+//        weirdCheck(2);
+        stdinOut();
     }
 }
