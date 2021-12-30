@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class HackerRank {
@@ -49,15 +51,31 @@ public class HackerRank {
 
     public static void printMultiples(int n) {
         for (int i = 1; i <= 10; i++) {
+
             int math = n*i;
             System.out.printf("%s x %s = %s %n", n, i, math);
         }
+    }
+
+    public static int simpleArraySum(List<Integer> ar) {
+        // Write your code here
+        Integer sum = 0;
+        for (Integer integer : ar) {
+            sum += integer;
+        }
+        System.out.println(sum);
+        return sum;
     }
 
     public static void main(String[] args) {
 //        weirdCheck(2);
 //        stdinOut();
 //        formatOutput();
-        printMultiples(5);
+//        printMultiples(5);
+        List<Integer> arr = new ArrayList<>();
+        arr.add(5);
+        arr.add(6);
+        arr.add(13);
+        simpleArraySum(arr);
     }
 }
