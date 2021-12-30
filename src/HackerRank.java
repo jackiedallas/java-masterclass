@@ -41,14 +41,23 @@ public class HackerRank {
             String s1=sc.next();
             int x=sc.nextInt();
             System.out.printf("%-15s%03d%n", s1, x);
+            // the 03d adds the number 0 as padding in front of the x variable. 3 says how many digits the variables should be formatted to. 0 is what it should be padded with if it's less than 3 digits
             // adding spaces affects the output in the console
         }
         System.out.println("================================");
     }
 
+    public static void printMultiples(int n) {
+        for (int i = 1; i <= 10; i++) {
+            int math = n*i;
+            System.out.printf("%s x %s = %s %n", n, i, math);
+        }
+    }
+
     public static void main(String[] args) {
 //        weirdCheck(2);
 //        stdinOut();
-        formatOutput();
+//        formatOutput();
+        printMultiples(5);
     }
 }
